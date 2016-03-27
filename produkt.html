@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Lightboxen.de | Produktdetails</title>
+	<link rel="stylesheet" href="css/style.css" media="all" />
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<meta name="robots" content="index, follow"/>
+	<script src="js/tabcontent.js" type="text/javascript"></script> 
+	<script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+	<script>
+$(document).ready(function() {
+       
+    $('.top .thema').click(function(){
+	     	if($(this).hasClass('closed')) { 
+	     		$(this).addClass('open').removeClass('closed'); 
+	     		$(this).siblings('.inhalt').slideDown(200);
+		 	} else {
+		 		$(this).addClass('closed').removeClass('open');
+		 		$(this).siblings('.inhalt').slideUp(200);
+		 	} 
+	     });
+    
+});
+     </script>
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+<!-- Header -->
+<div id="header">
+<h1>LIGHTBOXEN.DE</h1>
+ <a href="#">Kontakt</a>
+</div>
+<!-- Header Ende -->
+ 
+ 
+<!-- Navigation -->
+<div id="navi">
+<ul id="liste">
+<li><a href="uebersicht.html">RAHMEN</a>
+<ul>
+<li><a href="/Seite.htm">Unterseite 2.1</a></li>
+<li><a href="/Seite.htm">Unterseite 2.2</a></li>
+<li><a href="/Seite.htm">Unterseite 2.3</a></li>
+</ul>
+</li>
+
+<li><a href="#">SPANNT&Uuml;CHER</a>
+<ul>
+<li><a href="/Seite.htm">Unterseite 2.1</a></li>
+<li><a href="/Seite.htm">Unterseite 2.2</a></li>
+<li><a href="/Seite.htm">Unterseite 2.3</a></li>
+</ul>
+</li>
+
+<li><a href="#">FASADEN</a>
+<ul>
+<li><a href="/Seite.htm">Unterseite 2.1</a></li>
+<li><a href="/Seite.htm">Unterseite 2.2</a></li>
+<li><a href="/Seite.htm">Unterseite 2.3</a></li>
+</ul>
+</li>
+
+<li><a href="#">LEUCHTK&Auml;STEN</a>
+<ul>
+<li><a href="/Seite.htm">Unterseite 2.1</a></li>
+<li><a href="/Seite.htm">Unterseite 2.2</a></li>
+<li><a href="/Seite.htm">Unterseite 2.3</a></li>
+</ul>
+</li>
+
+<li><a href="#">FLUTER</a>
+<ul>
+<li><a href="/Seite.htm">Unterseite 2.1</a></li>
+<li><a href="/Seite.htm">Unterseite 2.2</a></li>
+<li><a href="/Seite.htm">Unterseite 2.3</a></li>
+</ul>
+</li>
+
+<li><a href="#">S&Auml;ULEN</a>
+<ul>
+<li><a href="/Seite.htm">Unterseite 2.1</a></li>
+<li><a href="/Seite.htm">Unterseite 2.2</a></li>
+<li><a href="/Seite.htm">Unterseite 2.3</a></li>
+</ul>
+</li>
+
+<li><a href="#">PYLONE</a>
+<ul>
+<li><a href="/Seite.htm">Unterseite 2.1</a></li>
+<li><a href="/Seite.htm">Unterseite 2.2</a></li>
+<li><a href="/Seite.htm">Unterseite 2.3</a></li>
+</ul>
+</li>
+</div>
+<!-- Ende Navigation -->
+
+
+<!-- Gr&uuml;ne linke Box -->
+<div id="left_box">
+
+     <a href="produkt.html">Bilderrahmen</a><p> 100cm</p>
+     </br>
+     <a href="produkt.html">Bilderrahmen</a><p> 200cm</p>
+     </br>
+     <a href="produkt.html">Bilderrahmen</a><p> 300cm</p>
+     </br>
+     <a href="produkt.html">Bilderrahmen</a><p> 400cm</p>
+     </br>
+     <a href="produkt.html">Bilderrahmen</a><p> 500cm</p>
+</div>
+<!-- Ende Gr&uuml;ne linke Box -->
+
+
+<!-- CONTENT -->
+<div id="gray"> <!-- Hintergrund -->
+ 
+
+<!-- Produktbild, Men&uuml;, Zur&uuml;ck-Button, usw. -->
+<div id="info">
+
+
+<!-- Zurück Button -->
+<div id="back">
+     <a href="uebersicht.html">Zur&uuml;ck</a>
+</div>
+<!-- Ende Zurück Button -->
+
+
+<!-- Produktbild -->
+<div id="produktbild">
+     <img src="img/box2.png" width="200" height="400" alt="Produktbild">
+</div>
+<!-- Ende Produktbild -->
+ 
+ 
+<!-- Klappmen&uuml; -->
+ <div id="akkordeon">
+
+<div class="top">
+     <div class="thema closed"> <h2>Bauform und Gr&ouml;&szlig;e</h2> </div>
+     <div class="inhalt">Inhalt</div>
+</div>
+
+<div class="top">
+     <div class="thema closed"> <h2>Profilfarbe</h2> </div>
+     <div class="inhalt">Farben: blau, schwarz, rot</div>
+</div>
+
+<div class="top">
+     <div class="thema closed"> <h2>Frontmaterial</h2> </div>
+     <div class="inhalt">Glas, Eisen, Holz</div>
+</div>
+
+<div class="top">
+     <div class="thema closed"> <h2>Ausleuchtung</h2> </div>
+     <div class="inhalt">LED, Neon, Engeriesparlampe</div>
+</div>
+
+<div class="top">
+     <div class="thema closed"> <h2>Beschreibung</h2> </div>
+     <div class="inhalt">Hier ist der Beschreibungstext zum Thema Inhalt.</div>
+</div>
+
+</div>
+<!-- Ende Klappmen&uuml; -->
+
+
+<!-- Thumbnail-Slider -->
+<div id="thumbnail_slider">
+
+     <img src="img/thumb_slider.png" width="300" height="90" alt="Thumbnail Slider">
+
+</div>
+<!-- Ende Thumbnail-Slider -->
+  
+  
+ </div>
+ <!--Ende Produktbild, Men&uuml; -->
+ 
+ 
+<!-- kleine Box -->
+<div id="little_box">
+
+</div>
+<!-- Ende kleine Box -->
+ 
+<!-- Detail Box --> 
+<div id="detail_box">
+     <h1>Profil f&uuml;r Leuchtk&auml;sten</h1>
+     <h2>Einseitig oder Doppelseitig</br>Innen- und Au&szlig;enbereich</h2>
+     <h3>12411 - 12410 - 70 mm</h3><h4>Profil mit Klicksystem.</h4> 
+     <p>- Als gerade oder gew&ouml;blte Form</br></br>- Dieses Profil in folgender Gr&ouml;&szlig;e in Kombination mit fertigen Acrylhauben erh&auml;ltlich.</p>
+</div>
+<!-- Ende Detail Box -->
+
+
+<!-- Tab-Men&uuml; -->
+
+<div id="more_box">
+ 
+<ul class="tabs">
+     <li><a href="#" rel="view1">Weitere Produkte</a></li>
+     <li><a href="#" rel="view2">Artikeldetails</a></li>
+     <li><a href="#" rel="view3">Acrylhauben</a></li> 
+</ul>
+     <div class="tabcontents">
+     <div id="view1" class="tabcontent"><img src="img/more.png" width="780" height="200" alt="Bild 1"></div> 
+     <div id="view2" class="tabcontent">Inhalt Inhalt Text Beschreibung Text Hier kann auch ein Bild stehen.</div>
+     <div id="view3" class="tabcontent">Inhalt Inhalt Text Beschreibung Text Hier kann auch ein Bild stehen!!</div> 
+</div>
+ 
+ </div>
+<!-- Ende Tab-Men&uuml; -->
+
+ 
+ 
+ 
+</div>
+<!-- Ende CONTENT -->
+
+
+</div>
+<div id="footer">
+     <a href="#">Impressum</a> <a href="#">Datenschutz</a> <a href="#">AGB's</a> <a href="#"> FAQ</a> <a href="#">Mitgliederbereich</a>
+
+</div>
+</body>
+</html>
+
